@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rock-papper-scissors</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <main class="game">
+        <section class="panel">
+            <p class="eyebrow">Arcade classic</p>
+            <h1>Rock Paper Scissors</h1>
+            <p class="lede">Pick your move. First to 5 points wins the match.</p>
+
+            <div class="scoreboard">
+                <div class="score-card">
+                    <h3>Player</h3>
+                    <div class="score" id="player-score">0</div>
+                </div>
+                <div class="score-card">
+                    <h3>Computer</h3>
+                    <div class="score" id="computer-score">0</div>
+                </div>
+            </div>
+
+            <div class="status" id="status">Choose Rock, Paper, or Scissors to start.</div>
+            <div class="result" id="round-detail">No rounds played yet.</div>
+
+            <div class="choices">
+                <button class="btn-primary" data-choice="rock">Rock</button>
+                <button class="btn-secondary" data-choice="paper">Paper</button>
+                <button class="btn-primary" data-choice="scissors">Scissors</button>
+            </div>
+
+            <button class="btn-ghost" id="reset">Reset match</button>
+            <p class="footer">Every click plays a round. Reach 5 points to win.</p>
+        </section>
+    </main>
 
     <script src="./js/index.js"></script>
 </body>
